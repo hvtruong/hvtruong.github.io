@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toxic Comment Classification Challenge</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Toxic_Comment.css"/>
+</head>
+<body>
+
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+    </div>
+    
+    <h2>Toxic Comment Classification Challenge <a href="https://github.com/hvtruong/Toxic-comment-classification" class="fa fa-github"></a></h2>
+
+    <h4>Description</h4>
+
+    <p>
+        For this project, I was responsible for preprocessing the raw comments from Wikipedia and designing the models. 
+        To be trainable, the raw comments were processed to remove duplicating words, punctuations, numbers, ..., and were turned into sequences of integers.
+        Then, we focused to analyze the application of the article <a href="https://arxiv.org/abs/1411.4166">Retrofitting Word Vectors to Semantic Lexicons</a>
+        to this task as comments can be implicitly toxic. Our best score for this challege is 0.97621 with details as in the <a href="#presentation">presentation</a> below.
+    </p>
+
+    <h4>Sample input</h4>
+    <img src="Images/sample toxic input.png" alt="Sample comments input">
+
+    <h4>Sample output</h4>
+    <img src="Images/sample toxic output.png" alt="Sample comments output">
+
+    <h4 id="presentation">Presentation</h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_bf7-ekgW50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
