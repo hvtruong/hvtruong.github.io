@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitLab Analyzer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <link rel="stylesheet" type="text/css" href="Toxic_Comment.css"/>
+</head>
+<body>
+
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+    </div>
+    
+    <h2>GitLab Analyzer <a href="https://github.com/hvtruong/Gitlab-Analyzer" class="fa fa-github"></a></h2>
+
+    <h4>Description</h4>
+
+    <p>
+        GitLab Analyzer was designed following the Backend For Frontend (BFF) pattern. 
+        It requires accesses to repositories and can analyze them simultaneously. 
+        Users can determine the cofigurations like time invervals to analyzer, scores for file types (.css, .html, .java, etc), scores for adding/deleting a line, code reviews, ...
+        Users also receive the code contributions for each commit/ merge request, details of how the scores were computed, and metrics like graphs of code reviews, commit frequencies, ... 
+        All these data is stored in our database and available for later uses. Finally, users can adjust the scores based on his/ her decisions and all the correlated scores will be updated automatically.
+        <img src="Images/GitLab repo.png" alt="GitLab Analyzer repositories">
+        <h5>Repositories in a team member's GitLab account</h5>
+        <img src="Images/configuration form.png" alt="GitLab Analyzer configuration form">
+        <h5>GitLab Analyzer's configuration form</h5>
+        <img src="Images/GitLab Graph.png" alt="GitLab Analyzer graphs">
+        <h5>Details of contributions by graphs</h5>
+        <img src="Images/GitLab code.png" alt="GitLab Analyzer code and scores">
+        <h5>Code and scores for commits/ merge requests</h5>
+        <img src="Images/details for score computation.png" alt="GitLab Analyzer score computation breakdowns">
+        <h5>Breakdowns of score computations</h5>
+        For this project, I was in the backend team and responsible for designing the API endpoints and the commit/ merge request services. 
+        My main work is to maintain the communications between frontend and backed by processing the code contributions, scores, configurations, ..., wrapping them up, and send them to backend or frontend as objects.
+        I also developed a GitLab Automated Continuous Integration System to build and run unit tests whenever anyone pushes code or merges branches.
+        
+    </p>
+
+    <h4>Demo</h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QMB1TWo7td4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html>
