@@ -1,26 +1,315 @@
-.topnav {
-    background-color: #333;
-    overflow: hidden;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: Rockwell, 'Courier Bold', Courier, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+#phone-screenshot {
+  width: 200px;
+  height: 400px;
+}
+
+.nav {
+  background-color: transparent;
+  position: fixed;
+  height: 100%;
+  width: 120px;
+  padding-top: 15%;
+  overflow: hidden;
+}
+
+.nav ul li{
+  display: inline;
+  padding: auto;
+}
+
+.nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: Baloo;
+}
+
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.background {
+  position: fixed;
+  background: linear-gradient(to left, #0db6e0, #8d1d84);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.boxes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.boxes li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  animation: animate 20s linear infinite;
+}
+
+.boxes li:nth-child(1) {
+  top: 50%;
+  left: 80%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.boxes li:nth-child(2) {
+  top: 70%;
+  left: 60%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 1.5s;
+  animation-duration: 10s;
+}
+
+.boxes li:nth-child(3) {
+  top: 85%;
+  left: 5%;
+  width: 100px;
+  height: 100px;
+  animation-delay: 2.5s;
+}
+
+.boxes li:nth-child(4) {
+  top: 20%;
+  left: 20%;
+  width: 70px;
+  height: 70px;
+  animation-delay: 0s;
+  animation-duration: 15s;
+}
+
+.boxes li:nth-child(5) {
+  top: 30%;
+  left: 90%;
+  width: 50px;
+  height: 50px;
+  animation-delay: 0s;
+  animation-duration: 15s;
+}
+
+.boxes li:nth-child(6) {
+  top: 90%;
+  left: 30%;
+  width: 40px;
+  height: 40px;
+  animation-delay: 3.5s;
+  animation-duration: 15s;
+}
+
+.boxes li:nth-child(7) {
+  top: 75%;
+  left: 95%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 0;
+}
+
+.boxes li:nth-child(8) {
+  top: 15%;
+  left: 65%;
+  width: 65px;
+  height: 65px;
+  animation-delay: 1.5s;
+  animation-duration: 7.5s;
+}
+
+.boxes li:nth-child(9) {
+  top: 25%;
+  left: 5%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+@keyframes animate{
+  0%{
+    transform: translateY(
+      0) rotate(0deg);
+    opacity: 100%;
   }
-  
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+
+  100%{
+    transform: translateY(-800px) rotate(360deg);
+    opacity: 0%;
   }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
+}
+
+h1 {
+  font-size: 30pt;
+}
+
+h2 {
+  color: yellow;
+  font-size: 20pt;
+}
+
+.main .welcome {
+  margin-top: 22.5%;
+  margin-left: 120px;
+  font-size: 25pt;
+  color: yellow;
+}
+
+.main .about {
+  margin-top: 30%;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-top: 10%;
+  line-height: 32.5px;
+  font-size: 15pt;
+  color: #ddd;
+}
+
+.main .skills {
+  padding-top: 10%;
+  margin-top: 30%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+label {
+  color: #fff;
+}
+
+.main .skills .skill {
+  margin: 10px;
+}
+
+progress {
+  width: 50%;
+  height: 24px;
+}
+
+.main .projects {
+  padding-top: 10%;
+  margin-top: 30%;
+}
+
+.column-left {
+  float: left;
+  width: 550px;
+  margin-left: 30px;
+}
+
+.column-right {
+  float: right;
+  width: 550px;
+  margin-right: 160px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main .project {
+  margin-bottom: 100px;
+}
+
+.main .projects .project-image {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  border-radius: 11px;
+  box-shadow: 0px 3px 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 550px;
+  height: 500px;
+}
+
+.main .projects .project #android-image {
+  margin-left: 40%;
+  width: 400px;
+  height: 700px;
+}
+
+#digit-recognizer, #mine-seeker {
+  margin-left: 0;
+}
+
+#gitlab-analyzer, #mine-seeker {
+  height: 400px;
+}
+
+.main .projects .project-text-left, .main .projects .project-text-right {
+  color: #fff;
+  position: absolute;
+  margin-top: -25%;
+  margin-left: 12.5%;
+  width: 30%;
+  opacity: 0%;
+}
+
+.main .projects .project-text-right {
+  margin-left: 2.5%;
+}
+
+.main .projects .project #android-text {
+  margin-left: 16.5%;
+  margin-top: -37.5%;
+  width: 22.5%;
+}
+
+.main .projects h4 {
+  color: yellow;
+  margin-bottom: 15px;
+}
+
+.main .projects .project-text-left a, .main .projects .project-text-right a {
+  color: #fff;
+}
+
+.project:hover .project-image {
+  opacity: 15%;
+}
+
+.project:hover .project-text-left, .project:hover .project-text-right {
+  opacity: 100%;
+}
+
+#contact {
+  padding-top: 10%;
+  margin-top: 30%;
+  margin-bottom: 15%;
+}
 
 .fa {
     padding: 5px;
