@@ -178,6 +178,11 @@ h2 {
   font-size: 20pt;
 }
 
+h4, h5 {
+  color: yellow;
+  margin-bottom: 15px;
+}
+
 .main .welcome {
   margin-top: 22.5%;
   margin-left: 120px;
@@ -285,11 +290,6 @@ progress {
   margin-left: 16.5%;
   margin-top: -37.5%;
   width: 22.5%;
-}
-
-.main .projects h4 {
-  color: yellow;
-  margin-bottom: 15px;
 }
 
 .main .projects .project-text-left a, .main .projects .project-text-right a {

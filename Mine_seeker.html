@@ -7,34 +7,72 @@
     <title>Mine Seeker</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="index.css"/>
-    <link rel="stylesheet" type="text/css" href="Safe_restaurants.css"/>
+    <link rel="stylesheet" type="text/css" href="project.css"/>
 </head>
 <body>
     
-    <div class="topnav">
-        <a class="active" href="index.html">Home</a>
+    <div class="nav">
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#contact-container">Contact</a></li>
+        </ul>
     </div>
+
+    <div class="background">
+        <ul class="boxes">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div class="main">
     
-    <h2>Safe Restaurants <a href="https://github.com/hvtruong/Mine-Seeker" class="fa fa-github"></a></h2>
+        <h2>Mine Seeker</h2>
+        <a href="https://github.com/hvtruong/Mine-Seeker" class="fa fa-github"></a>
 
-    <h4>Description</h4>
+        <h4>Description</h4>
 
-    <p>
-        Starting the game, players will see an animated welcome screen as below and can choose to skip
+        <p>
+            Starting the game, players will see an animated welcome screen as below and can choose to skip
+        </p>
+
         <img src="Images/Mine seeker welcome.png" alt="Mine Seeker's welcome screen">
         <h5>Mine Seeker's welcome screen</h5>
-        Then, you will see the main screen where you can learn how to play, adjust the game level or start playing:
+
+        <p>Then, you will see the main screen where you can learn how to play, adjust the game level or start playing:</p>
+
         <img src="Images/Mine seeker main.png" alt="Mine Seeker's main screen">
         <h5>Mine Seeker's main screen</h5>
-        The rule is simple: your goal is to find all the hidden mines by revealing the rectangles. 
-        Everytime you reveal a rectangle, you either find a hidden mine or you get a hint of how many hidden mines are left on the row/column of that rectangle.
+
+        <p>
+            The rule is simple: your goal is to find all the hidden mines by revealing the rectangles.
+            Everytime you reveal a rectangle, you either find a hidden mine or you get a hint of how many hidden mines are left on the row/column of that rectangle.
+        </p>
+
         <img src="Images/Mine seeker gameplay.png" alt="Mine Seeker's gameplay">
         <h5>Mine Seeker's gameplay</h5>
-        To adjust the difficulty-level, you can go to the options screen to adjust the size of the grid and the number of hidden mines
+
+        
+        <p>To adjust the difficulty-level, you can go to the options screen to adjust the size of the grid and the number of hidden mines</p>
+        
         <img src="Images/Mine seeker options screen.png" alt="Mine Seeker's options screen">
         <h5>Mine Seeker's options screen</h5>
-        That's all about the game, you can clone this project by pressing the GitHub icon above and run it on an Android device with API level at least 29 to play this game. Have fun!
-    </p>
+        
+        <p id="last-paragraph">
+            That's all about the game, you can clone this project by pressing the GitHub icon above and run it on an Android device with API level at least 29 to play this game. Have fun!
+        </p>
+
+    </div>
 
 </body>
 </html>
