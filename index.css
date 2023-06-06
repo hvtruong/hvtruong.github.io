@@ -221,6 +221,7 @@ progress {
 }
 
 .main .projects {
+  position: relative;
   padding-top: 10%;
   margin-top: 30%;
 }
@@ -244,6 +245,7 @@ progress {
 }
 
 .main .project {
+  position: relative;
   margin-bottom: 100px;
 }
 
@@ -276,20 +278,24 @@ progress {
 .main .projects .project-text-left, .main .projects .project-text-right {
   color: #fff;
   position: absolute;
-  margin-top: -25%;
-  margin-left: 12.5%;
-  width: 30%;
+  top: 15%;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  width: 50%;
   opacity: 0%;
 }
 
 .main .projects .project-text-right {
-  margin-left: 2.5%;
+  top: 15%;
+  bottom: 0;
+  left: 25%;
+  right: 50%;
 }
 
 .main .projects .project #android-text {
-  margin-left: 16.5%;
-  margin-top: -37.5%;
-  width: 22.5%;
+  margin-left: 12.5%;
+  width: 30%;
 }
 
 .main .projects .project-text-left a, .main .projects .project-text-right a {
@@ -301,6 +307,7 @@ progress {
 }
 
 .project:hover .project-text-left, .project:hover .project-text-right {
+  visibility: visible;
   opacity: 100%;
 }
 
