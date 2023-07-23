@@ -55,7 +55,7 @@ h2 {
 
 .background {
   position: fixed;
-  background: linear-gradient(to left, #0db6e0, #8d1d84);
+  background: linear-gradient(to left, #0b87a7, #000000);
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -184,15 +184,20 @@ h4, h5 {
   margin-bottom: 15px;
 }
 
-.main .welcome {
+.welcome, .container, .projects {
+  width: 100%;
+  height: 100%;
+}
+
+.welcome {
   margin-top: 22.5%;
   margin-left: 120px;
   font-size: 25pt;
   color: yellow;
 }
 
-.main .about {
-  margin-top: 30%;
+.about {
+  margin-top: 5%;
   margin-left: 25%;
   margin-right: 25%;
   padding-top: 10%;
@@ -201,9 +206,10 @@ h4, h5 {
   color: #ddd;
 }
 
-.main .skills {
+.skills {
   padding-top: 10%;
-  margin-top: 30%;
+  margin-top: 10%;
+  padding-bottom: 30%;
   margin-left: 25%;
   margin-right: 25%;
 }
@@ -212,7 +218,7 @@ label {
   color: #fff;
 }
 
-.main .skills .skill {
+.skills .skill {
   margin: 10px;
 }
 
@@ -221,10 +227,10 @@ progress {
   height: 24px;
 }
 
-.main .projects {
+.projects {
   position: relative;
   padding-top: 10%;
-  margin-top: 30%;
+  margin-top: 5%;
 }
 
 .column-left {
@@ -245,12 +251,12 @@ progress {
   clear: both;
 }
 
-.main .project {
+.project {
   position: relative;
   margin-bottom: 100px;
 }
 
-.main .projects .project-image {
+.projects .project-image {
   position: relative;
   display: inline-block;
   color: #fff;
@@ -262,7 +268,7 @@ progress {
   height: 500px;
 }
 
-.main .projects .project #android-image {
+.projects .project #android-image {
   margin-left: 40%;
   width: 400px;
   height: 700px;
@@ -276,7 +282,7 @@ progress {
   height: 400px;
 }
 
-.main .projects .project-text-left, .main .projects .project-text-right {
+.projects .project-text-left, .projects .project-text-right {
   color: #fff;
   position: absolute;
   top: 15%;
@@ -287,19 +293,19 @@ progress {
   opacity: 0%;
 }
 
-.main .projects .project-text-right {
+.projects .project-text-right {
   top: 15%;
   bottom: 0;
   left: 25%;
   right: 50%;
 }
 
-.main .projects .project #android-text {
+.projects .project #android-text {
   margin-left: 12.5%;
   width: 30%;
 }
 
-.main .projects .project-text-left a, .main .projects .project-text-right a {
+.projects .project-text-left a, .projects .project-text-right a {
   color: #fff;
 }
 
@@ -313,9 +319,11 @@ progress {
 }
 
 #contact-container {
-  margin-top: 30%;
+  width: 100%;
+  height: 100%;
   padding-top: 10%;
-  margin-bottom: 15%;
+  margin-top: 5%;
+  margin-bottom: 30%;
 }
 
 #contact-container p {
