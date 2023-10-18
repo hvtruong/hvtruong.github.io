@@ -274,7 +274,7 @@ progress {
   height: 700px;
 }
 
-#digit-recognizer, #mine-seeker {
+#toxic, #digit-recognizer, #mine-seeker {
   margin-left: 0;
 }
 
