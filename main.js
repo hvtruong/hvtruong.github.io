@@ -1,10 +1,3 @@
-var audio = document.getElementById("audioPlayer");
-var loader = document.getElementById("preloader");
-window.addEventListener("load", function () {
-    loader.style.display = "none";
-    document.querySelector(".hey").classList.add("popup");
-});
-
 document
     .getElementById("visualmodetogglebuttoncontainer")
     .classList.toggle("visualmodeshow");
@@ -19,14 +12,12 @@ document.addEventListener(
     false
 );
 
-// preloader script ends here.........
-
 function visualMode() {
     document.body.classList.toggle("light-mode");
 }
 let emptyArea = document.getElementById("emptyarea");
 let mobileToggleMenu = document.getElementById("mobiletogglemenu");
-// toggle menu by clicking on hamburger
+
 function hamburgerMenu() {
     document.body.classList.toggle("stopscrolling");
     document
@@ -42,7 +33,7 @@ function hamburgerMenu() {
         .getElementById("burger-bar3")
         .classList.toggle("hamburger-animation3");
 }
-// close mobile toggle menu by clicking on LI
+
 function hideMenuByLi() {
     document.body.classList.toggle("stopscrolling");
     document
@@ -90,10 +81,6 @@ window.addEventListener("scroll", () => {
         }
     });
 });
-console.log(
-    "%c Designed and Developed by Vinod Jangid ",
-    "background-image: linear-gradient(90deg,#8000ff,#6bc5f8); color: white;font-weight:900;font-size:1rem; padding:20px;"
-);
 
 let myButton = document.getElementById("backtotopbutton");
 window.onscroll = function () {

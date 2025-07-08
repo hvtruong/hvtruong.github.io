@@ -264,23 +264,6 @@ header{
     align-items: flex-end;
     justify-content: center;
 }
-#preloader{
-    background-color:white;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 99999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow-y: hidden;
-    background-image: url(src/svg/Pulse-0.4s-200px.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 10%;
-    filter: invert(1);
-
-}
 noscript{
     position: fixed;
     width: 100%;
@@ -1967,7 +1950,6 @@ transition-duration: 1s;
     .logos{
         gap: 20px;
     }
-     /* https://github.com/vinodjangid07 */
   }
   @media screen and (max-width:300px) {
     html {
@@ -1996,13 +1978,3 @@ transition-duration: 1s;
         gap: 20px;
     }
   }
-  /* https://github.com/vinodjangid07 */
-  /* responsive code above */
-/*   
-
-  @media screen and (min-height: 900px) and (max-width: 600px) {
-
-    .text-content{
-        justify-content: flex-start;
-    }
-  } */
